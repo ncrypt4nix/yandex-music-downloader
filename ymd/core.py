@@ -27,7 +27,7 @@ from mutagen.id3._frames import (
 from mutagen.id3._specs import ID3TimeStamp, PictureType
 from mutagen.mp3 import MP3
 from mutagen.mp4 import MP4, MP4Cover
-from strenum import LowercaseStrEnum
+from enum import StrEnum
 from yandex_music import (
     Album,
     Client,
@@ -67,7 +67,7 @@ class CoreTrackQuality(IntEnum):
     LOSSLESS = auto()
 
 
-class LyricsFormat(LowercaseStrEnum):
+class LyricsFormat(StrEnum):
     NONE = auto()
     TEXT = auto()
     LRC = auto()

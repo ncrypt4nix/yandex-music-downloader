@@ -8,7 +8,7 @@ from dataclasses import dataclass
 from enum import Enum, auto
 
 from Crypto.Cipher import AES
-from strenum import StrEnum
+from enum import StrEnum
 from yandex_music import Client, Track
 from yandex_music.utils.sign_request import DEFAULT_SIGN_KEY
 
